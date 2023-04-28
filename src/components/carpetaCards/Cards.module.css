@@ -1,0 +1,8 @@
+.div{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}

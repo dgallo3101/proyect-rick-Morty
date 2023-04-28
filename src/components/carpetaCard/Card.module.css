@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center ;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  background: linear-gradient(to bottom, #A6EEE6FF, #F3E5ABFF);
+  box-shadow: 0 0 30px rgba(60, 255, 0, 0.5);
+  animation: shadowMove 3s linear infinite;
+}
+
+@keyframes shadowMove {
+  0% {
+    box-shadow: 0 0 30px rgba(60, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(60, 255, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(60, 255, 0, 0.5);
+  }
+}
+
+  
+  .cardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FAFD7CFF;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(138, 219, 138);
+    border-radius: 20px;
+    
+  }
+  .cardTitle:hover {
+    color:rgb(138, 219, 138);
+    background-color: #FAFD7CFF;
+  }
+  
+  
+
+
+  .cardImg {
+    border-radius: 10px 10px 10px 10px;
+    max-width: 90%;
+    max-height: 40%;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+
+  }
+  
+  .cardInfo {
+    font-size: 22px;
+    
+  }
+
+  button {
+    background-image: linear-gradient(to right, #9400D3, #FF1493);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-left: 15px;
+    
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }

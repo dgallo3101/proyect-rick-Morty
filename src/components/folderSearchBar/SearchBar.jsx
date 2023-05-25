@@ -14,13 +14,8 @@ function SearchBar({ onSearch }) {
 
    return (
       <nav className={styles.nav}>
-         <div className={styles.inputContainer}>
-            <input type='search' className={styles.inputSearch} value={id} onChange={handleChange} />
-            <button onClick={() => { onSearch(id); setId('') }}>Agregar</button>
-         </div>
 
-
-         <div className={styles.divButton}>
+<div className={styles.divButton}>
             <NavLink to='/about'>
                <button className={styles.button}>About</button>
             </NavLink>
@@ -28,8 +23,22 @@ function SearchBar({ onSearch }) {
             <NavLink to='home'>
                <button>Home</button>
             </NavLink>
+
+            
          </div>
 
+<div className={styles.inputContainer}>
+            <input type='search' className={styles.inputSearch} value={id} onChange={handleChange} />
+            <button onClick={() => { onSearch(id); setId('') }}>Add</button>
+         </div>
+
+
+
+         <NavLink to='/favorites' className={styles.favorites}>
+               Favorites
+            </NavLink>         
+
+         
       </nav>
    );
 }

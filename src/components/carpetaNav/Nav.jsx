@@ -1,15 +1,15 @@
 // import styles from './Nav.module.css';
 import SearchBar from '../folderSearchBar/SearchBar';
+import Favorites from '../Favorites/Favorites';
 import { NavLink } from 'react-router-dom';
 
 
 
 const Nav = ({ onSearch }) => {
     return (
-        <div>
+        <nav>
             <SearchBar onSearch={onSearch} />
-            
-        </div>
+        </nav>
     )
 };
 

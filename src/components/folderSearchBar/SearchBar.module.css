@@ -1,25 +1,39 @@
 .nav{
  display: flex;
- flex-direction: column ;
+ /* flex-direction: column ; */
+ align-items: center;
  height: auto;
+ width: 100%;
  background: linear-gradient(to bottom, rgb(182, 89, 255), rgb(51, 0, 102));  
- /* padding: .5rem; */
+
 
       
 }
 
 .inputContainer{
-  /* max-width: 0px; */
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 40%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 27rem;
+ 
+  
+  /* justify-content: flex-start; */
+  /* margin-left: 40%; */
   
 }
 
 
 .divButton{
-   display: flex;
+   display: inline-block;
    justify-content: flex-start;
+   align-items: flex-start;
+   /* margin-right: auto; */
+   /* margin-right: 12rem; */
+   /* justify-content: left; */
+   /* align-items: flex-end; */
+   
+   /* justify-content: flex-start; */
    /* margin-top: 10px; */
 }
 
@@ -30,6 +44,7 @@
     width: 10rem ;
     box-shadow: 0 0 20px 5px rgba(255, 0, 255, 0.8);
     animation: box-shadow-animation 2s ease-in-out infinite;
+    
 
     /* margin-left: 40%; */
     
@@ -46,4 +61,12 @@
     100% {
       box-shadow: 0 0 20px 5px rgba(255, 0, 255, 0.8);
     }
+  }
+
+
+  .favorites{
+    margin-left: auto;
+    margin-right: 1rem;
+    color: aliceblue;
+
   }
